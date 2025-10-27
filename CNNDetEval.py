@@ -117,7 +117,7 @@ def main():
     parser.add_argument('--model_path', type=str, required=True, help='Path to the pretrained model weights.')
     parser.add_argument('--model_name', type=str, default='CNNDetector', help='Name of the model for reporting.')
     parser.add_argument('--batch_size', type=int, default=2048, help='Batch size for inference.')
-    parser.add_argument('--num_workers', type=int, default=4, help='Number of workers for data loading.')
+    parser.add_argument('--num_workers', type=int, default=16, help='Number of workers for data loading.')
     parser.add_argument('--device', type=str, default='cuda', help='Device to use for inference (e.g., "cuda", "cpu").')
     parser.add_argument('--done_csv_list', nargs='*',
                         help='List of CSV files or directories with CSVs of already processed samples.')
